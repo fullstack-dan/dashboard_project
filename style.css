@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Questrial;
+    src: url(fonts/Questrial-Regular.ttf);
+}
+
+body {
+    font-family: Questrial;
+    background-color: lightgray;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+nav {
+    color: white;
+    background-color: #0f172a;
+    padding: 16px;
+
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    gap: 50px;
+}
+
+.navSection {
+    font-size: 80%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 4fr;
+}
+
+#content {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr
+}
+
+#projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
