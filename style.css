@@ -27,8 +27,8 @@ body {
 }
 
 .pfp {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-radius: 50%;
 }
@@ -65,19 +65,60 @@ main {
     display: grid;
     grid-template-rows: 0.5fr 0.5fr max(4fr, 100%);
     gap: 16px;
-
-
-    padding: 16px;
 }
 
-#miniNav {
+#userHeader {
+    background-color: white;
+    padding: 24px;
+}
+
+#miniNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    padding-top: 0px;
+}
+
+#miniNav * {
+    filter: none;
+}
+
+#miniNav .icon {
+    height: 25px;
+    width: 25px;
+}
+
+#searchBar, #userInfo { 
+    display: flex;
+    gap: 16px;
+
+    align-items: center;
+}
+
+#searchBar {
+    flex: 2 0 0;
+}
+
+#searchBar input {
+    background-color: lightgrey;
+    border-radius: 20px;
+    border-style: none;
+    height: 25px;
+    width: 80%;
+}
+
+
+#userBanner {
     display: flex;
 }
+
+
 
 #content {
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
     gap: 16px;
+    padding: 16px;
 }
 
 #projects {
